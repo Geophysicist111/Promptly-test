@@ -1,0 +1,98 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.hidden {
+    display: none;
+}
+
+.teal-heading {
+    color: teal;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    color: #0c0202;
+    margin-bottom: 20px;
+}
+
+.generator-page {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.output-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #333;
+    min-height: 50px;
+}
+
+.interactive-btn {
+    background-color: teal;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-btn:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn {
+    background-color: #f44336;
+}
+
+.back-btn:hover {
+    background-color: #d32f2f;
+}

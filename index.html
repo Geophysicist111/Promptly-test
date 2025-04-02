@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuses & Compliments Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            background: url('image.png') no-repeat center center fixed; /* Add the image as the background */
+            background-size: cover; /* Ensure the image covers the entire background */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="home" class="container">
+        <h1 class="teal-heading">Welcome!</h1>
+        <p>Need an excuse, a compliment, or a last-minute gift idea? We've got you covered!</p>
+
+        <div class="options">
+            <button class="interactive-btn" onclick="navigate('excuse')">Excuse Generator</button>
+            <button class="interactive-btn" onclick="navigate('compliment')">Compliment Generator</button>
+            <button class="interactive-btn" onclick="navigate('gift')">Last-Minute Gift Ideas</button>
+        </div>
+    </div>
+
+    <!-- Excuse Generator Page -->
+    <div id="excuse" class="hidden generator-page">
+        <div class="content-box">
+            <h1 class="teal-heading">Excuse Generator</h1>
+            <p class="description">Generate a creative excuse for any situation!</p>
+            <div class="output-box">
+                <p id="excuse-output"></p>
+            </div>
+            <button class="interactive-btn" onclick="generateExcuse()">Generate Excuse</button>
+            <button class="interactive-btn back-btn" onclick="navigate('home')">Back</button>
+        </div>
+    </div>
+
+    <!-- Compliments Generator Page -->
+    <div id="compliment" class="hidden generator-page">
+        <div class="content-box">
+            <h1 class="teal-heading">Compliments Generator</h1>
+            <p class="description">Brighten someone's day with a heartfelt compliment!</p>
+            <div class="output-box">
+                <p id="compliment-output"></p>
+            </div>
+            <button class="interactive-btn" onclick="generateCompliment()">Generate Compliment</button>
+            <button class="interactive-btn back-btn" onclick="navigate('home')">Back</button>
+        </div>
+    </div>
+
+    <!-- Last-Minute Gift Ideas Page -->
+    <div id="gift" class="hidden generator-page">
+        <div class="content-box">
+            <h1 class="teal-heading">Last-Minute Gift Ideas</h1>
+            <p class="description">Struggling for a last-minute gift? Get ideas instantly!</p>
+            <div class="output-box">
+                <p id="gift-output"></p>
+            </div>
+            <button class="interactive-btn" onclick="generateGift()">Generate Gift Idea</button>
+            <button class="interactive-btn back-btn" onclick="navigate('home')">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
